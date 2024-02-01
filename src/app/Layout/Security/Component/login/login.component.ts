@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       this.authService.login(username, password).subscribe((res:ApiResponse) => {
         if (res.isSuccess)
         {
-          // redirect
+          // redirect abc test
           this.router.navigate(['dashboard']);
           this.error = '';
         }
@@ -42,7 +42,6 @@ export class LoginComponent implements OnInit {
           }
       }
       );
-      //this.submitEM.emit(this.form.value);
     }
   }
   @Input() error: string | null | undefined;
