@@ -46,6 +46,4 @@ export class LoginComponent implements OnInit {
     }
   }
   @Input() error: string | null | undefined;
-
- 
 }
